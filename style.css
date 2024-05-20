@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: rgb(190, 190, 190);
+    align-items: center;
+}
+
+nav{
+    text-align: center;
+    background-color: #808080;
+    margin: 0;
+}
+
+h1{
+    height: 50px;
+    border-bottom: solid 1px black;
+    padding: 10px;
+    color: white;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+ul{
+    background-color: rgb(105, 105, 105);
+    display:flex;
+    gap: 100px;
+    font-size: 25px;
+    border-bottom: solid 1px black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    justify-content: center;
+    padding: 25px;  
+    list-style: none; 
+}
+
+ul li a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+h2{
+    padding: 10px;
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif
+}
+
+h3{
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+p{
+    padding: 10px;
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+div{
+    border-bottom: solid 1px rgb(61, 61, 61);
+}
+
+input{
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+}
+
+label{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+p#sexo{
+    font-size: 20px;
+}
+input#homem, input#mulher{
+    width: 40px;
+}
+
+textarea{
+    width: 250px;
+    height: 100px;
+    font-size: 20px;
+}
+
+.select{
+    width: 200px;
+    height: 30px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+p#interesses{
+    font-size: 20px;
+}
+input#filmes, input#livros, input#roupas, input#informatica, input#games{
+    width: 40px;
+}
+
+input#arquivos{
+    font-size: 20px;
+    width: 500px;
+    height: 30px;
+    border-radius: 10px;
+}
+
+input#enviar{
+    width: 150px;
+    height: 30px;
+    background-color: rgb(48, 48, 48);
+    color: white;
+    font-style: bold;
+    font-size: 20px;
+}
+  
+td img{
+    margin-left: 150px;
+    padding-right: 150px;
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    display: grid;
+}

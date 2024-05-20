@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Clínica ABC</title>
+</head>
+<body>
+    <nav>
+        <h1>Clínica ABC Health</h1>
+    
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./galeria.html">Galeria</a></li>
+            <li><a href="./cadastro.html">Cadastro</a></li>
+        </ul>
+    </nav>
+
+    <div>   
+
+    <h2>Cadastro</h2>
+
+    <form action="cadastraCliente.php" method="post">
+        <h3>Dados Pessoais</h3>
+        <p>
+            <label for="nome" >Nome:</label>
+            <input type="text" id="nome" autofocus required minlength="2" maxlength="50">
+        </p>
+
+        <p>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" required placeholder="exemplo@gmail.com">
+        </p>
+
+        <p>
+            <label for="cpf">CPF:</label>
+            <input type="text" id="cpf" required placeholder="xxx.xxx.xxx-xx" pattern="[0-9]{3}.[0-9]{3}.[0-9]{3}-[0-9]{2}">
+        </p>
+
+        <p>
+            <label for="idade">Idade:</label>
+            <input type="number" id="idade" required>
+        </p>
+
+        <p>
+            <label for="Telefone">Telefone:</label>
+            <input type="tel" id="Telefone" required placeholder="(xx) xxxxx-xxxx" pattern="[0-9]{2} [0-9]{5}-[0-9]{4}">
+        </p>
+
+        <p>
+            <label for="dataNascimento">Data de Nascimento:</label>
+            <input type="date" id="dataNascimento">
+        </p>
+
+        <p id="sexo">
+            Sexo:
+            <input type="radio" id="homem" name="sexo" value="homem">       
+            <label for="homem">Homem</label>
+            <input type="radio" id="mulher" name="sexo" value="mulher"> 
+            <label for="mulher">Mulher</label>
+  
+        </p>
+
+        <p id="estado_civil">
+            <label for="estadoCivil">Estado Civil:</label>
+            <select class="select" name="select" id="estadoCivil" required>
+                <option value="">escolha uma opção</option>
+                <option value="1">Solteiro</option>
+                <option value="2">Casado</option>
+                <option value="3">Viúvo</option>
+              </select>
+        </p>
+
+        <p>
+            <textarea name="atencao" id="atencao" readonly >Atenção: apenas data de nascimento e sexo, são opcionais.</textarea>
+        </p>
+
+    </div>
+    <div>
+
+        <h3>Endereço</h3>
+
+        <p>
+            <label for="cep">CEP:</label>
+            <input type="text" id="cep" required placeholder="xxxxx-xx" pattern="[0-9]{5}-[0-9]{2}">
+        </p>
+
+        <p>
+            <label for="tipoLogradouro">Tipo de Logradouro:</label>
+            <select class="select" name="select" id="tipoLogradouro" required>
+                <option value="">escolha uma opção</option>
+                <option value="1">Rua</option>
+                <option value="2">Avenida</option>
+                <option value="3">Praça</option>
+              </select>
+        </p>
+
+        <p>
+            <label for="logradouro" >Logradouro:</label>
+            <input type="text" id="logradouro" required>
+        </p>
+
+        <p>
+            <label for="bairro" >Bairro:</label>
+            <input type="text" id="bairro" required>
+        </p>
+
+        <p>
+            <label for="cidade" >Cidade:</label>
+            <input type="text" id="cidade" required>
+        </p>
+
+        <p>
+            <label for="estado" >Estado:</label>
+            <input type="text" id="estado" required>
+        </p>
+
+        <p>
+            <input type="hidden" name="nacionalidade" value="brasileiro">
+        </p>
+    </div>
+        <div>
+
+        <h3>Informações Adicionais</h3>
+
+        <p id="interesses">
+
+            Interesses:
+
+            <input type="checkbox" id="filmes" name="interesses" value="filmes">
+            <label for="filmes">Filmes</label>
+
+            <input type="checkbox" id="informatica" name="interesses" value="informatica">
+            <label for="informatica">Informática</label>
+
+            <input type="checkbox" id="games" name="interesses" value="games">
+            <label for="games">Games</label>
+
+            <input type="checkbox" id="livros" name="interesses" value="livros">
+            <label for="livros">Livros</label>
+
+            <input type="checkbox" id="roupas" name="interesses" value="roupas">
+            <label for="roupas">Roupas</label>
+    
+        </p>
+
+        <p>
+            <label for="mensagem">Informações Complementares: </label>
+            <textarea name="mensagem" id="mensagem">escreva aqui...</textarea>
+        </p>
+
+        <p>
+            <label for="arquivos">Adicione um arquivo:</label>
+            <input type="file" id="arquivos">
+        </p>
+
+        <p >
+            <input type="submit" id="enviar" value="enviar">
+        </p>
+    </form>
+
+</div>
+
+  
+
+    
+    <p><i>Av. João Naves de Ávila, Santa Mônica, Uberlândia</i></p>
+</html>
